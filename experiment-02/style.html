@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FLOWERS</title>
+
+<style>
+    /* Body & General */
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #fffaf0;
+        color: #333;
+    }
+
+    /* Header */
+    h1 {
+        text-align: center;
+        font-size: 3em;
+        margin: 40px 0 20px 0;
+        color: #e91e63;
+        letter-spacing: 2px;
+    }
+
+    /* Paragraph */
+    p {
+        max-width: 900px;
+        margin: 0 auto 40px auto;
+        padding: 20px;
+        background-color: #f5f5f5;
+        border-left: 6px solid #e91e63;
+        border-radius: 10px;
+        font-size: 1.1em;
+        line-height: 1.7;
+        text-align: justify;
+    }
+
+    /* Flower Buttons */
+    .flower-list {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 25px;
+        margin-bottom: 50px;
+    }
+
+    .flower-list a {
+        display: block;
+        padding: 20px 40px;
+        background-color: #ffebee;
+        color: #c2185b;
+        font-size: 1.2em;
+        font-weight: bold;
+        text-decoration: none;
+        border-radius: 15px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        transition: 0.3s;
+    }
+
+    .flower-list a:hover {
+        transform: translateY(-8px);
+        background-color: #f06292;
+        color: #fff;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+
+    /* Responsive */
+    @media(max-width: 600px) {
+        .flower-list {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .flower-list a {
+            width: 70%;
+            text-align: center;
+        }
+    }
+</style>
+</head>
+<body>
+
+<h1>FLOWERS</h1>
+
+<p>
+<span style="font: 200 x-large fantasy;">Flower</span> sometimes known as a bloom or blossom, is the reproductive structure found in flowering plants.
+The flower is God's finest workmanship in the world. It is His finest gift to mankind.
+We have seen flowers of many kinds and colors. In India, we see flowers like:
+</p>
+
+<div class="flower-list">
+    <a href="lilly.html">Lily</a>
+    <a href="lotus.html">Lotus</a>
+    <a href="rose.html">Rose</a>
+    <a href="jasmine.html">Jasmine</a>
+</div>
+
+</body>
+</html>
