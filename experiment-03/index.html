@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DHTML Form Validation</title>
+
+    <script>
+        function validateForm() {
+            var x = document.forms["myForm"]["fname"].value;
+
+            if (x == null || x.trim() === "") {
+                alert("Name must be filled out");
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+</head>
+
+<body>
+    <h2>Client Side Validation using DHTML</h2>
+
+    <form name="myForm"
+          action="usrwlcm.html"
+          onsubmit="return validateForm()"
+          method="get">
+
+        Name:
+        <input type="text" name="fname">
+        <br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
